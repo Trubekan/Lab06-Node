@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portafolio de <%= nombre %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li><a href="/ejs">Inicio</a></li>
+            <li><a href="/sobremi">Sobre mí</a></li>
+            <li><a href="/yo">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contacto">
+        <h2 style="font-size: 20px;">Urb. Guardia Civil III etapa k-22</h2> 
+        <h2 style="font-size: 20px;">enzo.velarde@tecsup.edu.pe</h2>
+        <h2 style="font-size: 20px;">www.linkedin.com/in/enzo-velarde(LinkedIn)</h2>
+        <form>
+          <label style="font-size: 20px;"for="name">Nombre:</label>
+          <input style="font-size: 20px;"type="text" id="name" name="name"><br><br>
+          <label style="font-size: 20px;"for="email">Email:</label>
+          <input style="font-size: 20px;"type="email" id="email" name="email"><br><br>
+          <label style="font-size: 20px;"for="message">Mensaje:</label><br>
+          <textarea id="message" name="message"></textarea><br><br>
+          <input type="submit" value="Enviar">
+        </form>
+        
+      </section>
+    </main>
+    <footer>
+      <p class="footer">&copy; <%= new Date().getFullYear() %> <%= nombre %></p>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

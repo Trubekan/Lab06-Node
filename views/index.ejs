@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portafolio de <%= nombre %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/ejs">Inicio</a></li>
+          <li><a href="/sobremi">Sobre mí</a></li>
+          <li><a href="/yo">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <p style="font-size: 30px;">Bienvenido a mi portafolio digital por Enzo Velarde.</p>
+        <p style="font-size: 20px;">¡Bienvenido a mi sitio web! Me llamo Enzo Velarde y soy un apasionado de la tecnología y la programación. En este espacio encontrarás información sobre mí y mis proyectos. Espero que disfrutes navegando por mi sitio y conociendo un poco más sobre mí y mi trabajo. ¡Gracias por visitar!</p>
+        <img src="https://i.ibb.co/5BkjG9H/Captura-de-pantalla-22.png" >
+      </section>
+         
+    </main>
+    <footer>
+      <p class="footer">&copy; <%= new Date().getFullYear() %> <%= nombre %></p>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
